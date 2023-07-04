@@ -1,0 +1,35 @@
+.wrapper {
+    position: relative;
+    width: 60vh;
+
+    input {
+        width: 85%;
+    }
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        button {
+            outline: 0;
+            border: none;
+            background: transparent;
+            color: $white-9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+    }
+    .slider {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

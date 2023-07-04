@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap";
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+span,
+b {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background-color: #121212;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff4d;
+
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    // background-color: #9a905d;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    -webkit-appearance: none;
+    color: #1ed760;
+    margin-top: -1px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 5px;
+    -webkit-appearance: none;
+    height: 5px;
+    cursor: pointer;
+    background: #434343;
+    border-radius: 50%;
+    scale: 1.5;
+    box-shadow: -1000px 0 0 1000px #1ed760;
+    position: relative;
+    z-index: 1000;
+  }
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #1ed760;
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #1ed760;
+}

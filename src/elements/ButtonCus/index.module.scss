@@ -1,0 +1,75 @@
+.wrapper {
+    position: relative;
+    background-color: $black;
+    color: $white;
+    border-radius: 500px;
+    font-size: inherit;
+    min-block-size: 32px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    padding-block: 4px;
+    padding-inline: 16px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+    padding: 12px 24px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        opacity: 0;
+        background-color: $white;
+        transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
+.btnBlack {
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+        &::before {
+            opacity: 0.08;
+        }
+    }
+}
+
+.btnWhite {
+    background-color: $white;
+    color: $black;
+    padding: 12px 20px;
+
+    &::before {
+        background-color: $black;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 0.08;
+        }
+    }
+
+    * {
+        color: $black;
+    }
+}
+
+.btnRounded {
+    border-radius: 50%;
+    padding: 16px;
+}

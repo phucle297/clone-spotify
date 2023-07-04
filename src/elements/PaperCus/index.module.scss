@@ -1,0 +1,10 @@
+.wrapper {
+    position: relative;
+
+    .paper {
+        position: relative;
+        padding: 16px 20px;
+        background: $secondary !important;
+        color: $white !important;
+    }
+}
